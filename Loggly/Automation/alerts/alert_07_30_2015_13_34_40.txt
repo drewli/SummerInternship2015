@@ -1,0 +1,928 @@
+Alert Name: CMD-ERROR-Failover
+Owner: kkagamida
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: System was unable to access MASTER and has failed over
+Saved Search: CMD-ERROR-Failover
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CQS-ERROR-Job-Failed
+Owner: kkagamida
+Run Every: 15 minutes
+Last Run: July 30, 2015, 11:15 p.m.
+Description: One or more jobs has failed on the CQS server
+Saved Search: CQS-ERROR-Job-Failed
+Alert if: count is > 0.0 within 16 minutes
+Send an Email checkbox: checked
+Email addresses: zzCCQSSupport (connxt_cqssupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 15 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-ERROR-AM
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASH-ERROR-AM
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzSWAT (SWAT@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-ERROR-CHARGE
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASH-ERROR-CHARGE
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzSWAT (SWAT@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-ERROR-EQ
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASH-ERROR-EQ
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzQueensEpic (QueensEpic_Support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-ERROR-Ext-Prov
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASH-ERROR-Ext-Prov
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzSWAT (SWAT@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-ERROR-Module-Compile
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:14 p.m.
+Description: PROD
+Saved Search: Custom Search Context
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-ERROR-Poll-Link
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASH-ERROR-Poll-Link
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzSWAT (SWAT@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-INFO-StartStop
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: Custom Search Context
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-PFI-DB-Purge
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASH-PFI-DB-Purge
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASH-Praxflow-DB-Purge
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: Custom Search Context
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-Catchall
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - All CRASH Errors
+Saved Search: CRASHEDI-ERROR-Catchall
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: jsunouchi (jsunouchi@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-Determine
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - Unable to determine file's practice
+Saved Search: CRASHEDI-ERROR-Determine
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-FileProcessing
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - General file processing error
+Saved Search: CRASHEDI-ERROR-FileProcessing
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-Identifier
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - Practice identifier retrieval error
+Saved Search: CRASHEDI-ERROR-Identifier
+Alert if: count is > 0.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-Identify
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - Unable to identify filetype
+Saved Search: CRASHEDI-ERROR-Identify
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-Recover
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - Files have been marked for recovery
+Saved Search: CRASHEDI-ERROR-Recover
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-Transfer
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - File transfer error
+Saved Search: CRASHEDI-ERROR-Transfer
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEDI-ERROR-Translate
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: EDI - File translation error
+Saved Search: CRASHEDI-ERROR-Translate
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHELIG-ERROR
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASHELIG-ERROR
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHEXP-ERROR
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASHEXP-ERROR
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzEDISupport (edi_support@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHINT-ERROR
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASHINT-ERROR
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHLAB-ERROR
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASHLAB-ERROR
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzSWAT (SWAT@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHPFI-Charge-Invalid-DX-Pointer
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: Custom Search Context
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzSWAT (SWAT@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHPFI-ERROR
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASHPFI-ERROR
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHRPT-ERROR-Crash
+Owner: cmcnicoll
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASHRPT-ERROR-Crash
+Alert if: count is > 0.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: CRASHRPT-ERROR-Report
+Owner: cmcnicoll
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: CRASHRPT-ERROR-Report
+Alert if: count is > 0.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: EventLog-Critical-SQLClient
+Owner: dyoung
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: SQL Client was unable to reuse a session
+Saved Search: EventLog-Critical-SQLClient
+Alert if: count is >= 1.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: EventLog-Critical-SQLJobFailed
+Owner: dyoung
+Run Every: 5 minutes
+Last Run: July 3, 2015, 12:57 a.m.
+Description: SQL Scheduled Job Status: Failed
+Saved Search: EventLog-Critical-SQLJobFailed
+Alert if: count is >= 1.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: unchecked
+
+
+Alert Name: EventLog-Warning-ASPNetTimeout
+Owner: dyoung
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: ASP.NET request timed out
+Saved Search: EventLog-Warning-ASPNetTimeout
+Alert if: count is >= 1.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: MSMQ-MSG-COUNT
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: MSMQ-MSG-Count
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: MSMQ-MSG-COUNT-200
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 27, 2015, 8:13 p.m.
+Description: PROD
+Saved Search: Custom Search Context
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: unchecked
+
+
+Alert Name: MSMQ-MSG-COUNT-cc-csr_x12
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:14 p.m.
+Description: PROD
+Saved Search: Custom Search Context
+Alert if: count is > 1.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: MSMQ-MSG-COUNT-cc-era_x12
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:14 p.m.
+Description: PROD
+Saved Search: MSMQ-MSG-COUNT-cc-era_x12
+Alert if: count is > 1.0 within 6 minutes
+Send an Email checkbox: unchecked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: MSMQ-MSG-COUNT-edi-identify
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:14 p.m.
+Description: PROD
+Saved Search: MSMQ-MSG-COUNT-edi-identify
+Alert if: count is > 1.0 within 6 minutes
+Send an Email checkbox: unchecked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: PFIADMIN-ERROR
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: Custom Search Context
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: PFIADMIN-MASSLOAD-Practice
+Owner: swu
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: PFIADMIN-MASSLOAD-Practice
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzQueensEpic (QueensEpic_Support@teampraxis.com), zzSWAT (SWAT@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: checked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: RPTSRSS-Critical-CantConnect
+Owner: dyoung
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Cannot Connect to Report Server Database
+Saved Search: RPTSRSS-Critical-CantConnect
+Alert if: count is >= 1.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: RPTSRSS-Critical-RqstDropped
+Owner: dyoung
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: SQL Report Server Dropping Requests
+Saved Search: RPTSRSS-Critical-RqstDropped
+Alert if: count is >= 1.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: RPTSSRS-ERROR-Report
+Owner: cmcnicoll
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: RPTSSRS-ERROR-Report
+Alert if: count is > 0.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: RPTSSRS-INFO-ExpiredRequest
+Owner: cmcnicoll
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: RPTSSRS-INFO-ExpiredRequest
+Alert if: count is > 0.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: RPTSSRS-WARN-RestartService
+Owner: cmcnicoll
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: PROD
+Saved Search: RPTSSRS-WARN-RestartService
+Alert if: count is > 0.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-CheckIISLogs
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:14 p.m.
+Description: Scheduled Task - Error during IIS log check
+Saved Search: SCHEDTASKS-ERROR-CheckIISLogs
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-DeleteSessions
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Delete Expired Sessions Error (STATE)
+Saved Search: SCHEDTASKS-ERROR-DeleteSessions
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-FilesVolumeBackup
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during FILES volume EBS snapshot
+Saved Search: SCHEDTASKS-ERROR-FilesVolumeBackup
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-LogsVolumeBackup
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during LOGS volume EBS snapshot
+Saved Search: SCHEDTASKS-ERROR-LogsVolumeBackup
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-PurgeOldFiles
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during purge of old files
+Saved Search: SCHEDTASKS-ERROR-PurgeOldFiles
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-RemoveSecurityGroups
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Tasks - Error during nightly removal of security groups
+Saved Search: SCHEDTASKS-ERROR-RemoveSecurityGroups
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-RemoveSnapshot
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during nightly EBS snapshot removal
+Saved Search: SCHEDTASKS-ERROR-RemoveSnapshot
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-Replication
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - One or more replication subscribers in an error status
+Saved Search: SCHEDTASKS-ERROR-Replication
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-SqlBackup
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during nightly full SQL backup
+Saved Search: SCHEDTASKS-ERROR-SqlBackup
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-SqlTlog
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during SQL TLOG backup
+Saved Search: SCHEDTASKS-ERROR-SqlTlog
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-StartupShutdownEnv
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during environment startup or shutdown
+Saved Search: SCHEDTASKS-ERROR-StartupShutdownEnvironment
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-UploadIISLogs
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Error during IIS log upload to S3
+Saved Search: SCHEDTASKS-ERROR-UploadIISLogs
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-VpnTunnel
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: Scheduled Task - Both VPN Tunnels are down
+Saved Search: SCHEDTASKS-ERROR-VpnTunnel
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SCHEDTASKS-ERROR-ZipIISLogs
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:14 p.m.
+Description: Scheduled Task - Error during IIS log zip operations
+Saved Search: SCHEDTASKS-ERROR-ZipIISLogs
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: Security-Informational-UserLogin
+Owner: dyoung
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: User logged in to host
+Saved Search: Security-Informational-UserLogin
+Alert if: count is >= 1.0 within 5 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+
+Alert Name: SYNC-ERROR
+Owner: jsunouchi
+Run Every: 5 minutes
+Last Run: July 30, 2015, 11:13 p.m.
+Description: SYNC -  Error during file sync
+Saved Search: SYNC-ERROR
+Alert if: count is > 0.0 within 6 minutes
+Send an Email checkbox: checked
+Email addresses: zzCDevSupport (connxtdevsupport@teampraxis.com), zzITTier3 (connxtalerts@teampraxis.com)
+Send to an Endpoint checkbox: unchecked
+Endpoint Name: No endpoints
+Include up to 10 recent events checkbox: unchecked
+Check for this condition every: 5 minutes
+Enable this alert checkbox: checked
+
+

@@ -1,0 +1,546 @@
+Search Name: CMD-ERROR-Catchall
+Time Range: Last 1 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: json.Hostname:*WEB0* json.Severity:ERROR tag:log4net
+Filters: 
+
+Search Name: CRASHRPT-ERROR-Catchall
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: json.process:crash json.Hostname:*RPT0* json.Severity:ERROR
+Filters: 
+
+Search Name: NXLOG-ERROR-Catchall
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: json.SourceName:nxlog-ce json.Severity:ERROR
+Filters: 
+
+Search Name: RPT-ERROR-Catchall
+Time Range: Last 1 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: (json.Hostname:*RPT0* AND json.Severity:ERROR) OR (syslog.host:*RPT0* AND syslog.severity:Error)
+Filters: 
+
+Search Name: RPTSSRS-ERROR-Catchall
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: syslog.host:*RPT0* "SSRSLogs" "e ERROR"
+Filters: 
+
+Search Name: CloudWatch
+Time Range: Last 3 days
+Owner: swu
+Alerts: 0
+Search String: 
+Filters: 
+
+Search Name: CMD-ERROR-Failover
+Time Range: Last 1 hours
+Owner: kkagamida
+Alerts: 1
+Search String: json.Severity:ERROR AND json.loggerName:"*ConnxtConfigurationProvider*" AND json.Message:"failover*"
+Filters: 
+
+Search Name: CMD-Error-SQL-Timeouts
+Time Range: Last 1 days
+Owner: kkagamida
+Alerts: 0
+Search String: json.Severity:ERROR json.exceptionObject.exceptionMessage:"timeout expired"
+Filters: 
+
+Search Name: CQS-ERROR-Job-Failed
+Time Range: Last 1 hours
+Owner: kkagamida
+Alerts: 1
+Search String: json.Severity:ERROR AND json.loggerName:CQS
+Filters: 
+
+Search Name: CRASH-ERROR-AM
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.process:crash json.Severity:ERROR "key ehr_code value AM" -json.$values.Value:("Send HL7 failed on try 1" OR "Send HL7 failed on try 2") -"Invalid diagnosis pointer in field" -"Key: crash:error Value: System.Exception: Practice task error"
+Filters: 
+
+Search Name: CRASH-ERROR-CHARGE
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*PFI01 json.process:crash json.Severity:ERROR ("key err_processor value charge-cleanup-processor" or "key err_processor value charge-correlation-processor" or "key err_processor value charge-assemble-processor")
+Filters: 
+
+Search Name: CRASH-ERROR-EQ
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.process:crash json.Severity:ERROR "key ehr_code value EQ" -json.$values.Value:("Send HL7 failed on try 1" OR "Send HL7 failed on try 2") -"Key: crash:error Value: System.Exception: Practice task error"
+Filters: 
+
+Search Name: CRASH-ERROR-Ext-Prov
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*PFI01 json.process:crash json.Severity:ERROR "key err_processor value ext-prov-trigger-processor"
+Filters: 
+
+Search Name: CRASH-ERROR-Module-Compile
+Time Range: Last 1 days
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Severity:error json.Message:"Error compiling file for module"
+Filters: 
+
+Search Name: CRASH-ERROR-Poll-Link
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*PFI01 json.process:crash json.Severity:ERROR  json.$values.Value:/(poll*|link*)/
+Filters: 
+
+Search Name: CRASH-INFO-Module-StartStop
+Time Range: Last 1 days
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Severity:INFO json.Message:Module
+Filters: 
+
+Search Name: CRASH-INFO-StartStop
+Time Range: Last 1 days
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Severity:INFO json.loggerName:"Crash.Crash" (json.Message:"Starting CRASH Service." OR json.Message:"Stopping CRASH Service.")
+Filters: 
+
+Search Name: CRASH-PFI-DB-Purge
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*PFI01 "Key: processor Value: purge-pfi-db-processor" -"Key: exit_code Value: 0" -"Key: message Value: Starting process with file*"
+Filters: json.Severity : INFO AND json.process : crash
+
+Search Name: CRASH-Praxflow-DB-Purge
+Time Range: Last 1 days
+Owner: swu
+Alerts: 0
+Search String: json.Hostname:*LAB01 json.process:crash "Key: processor Value: purge-pf-lab-db-processor"
+Filters: json.Severity : INFO AND json.$values.Key : exit_code
+
+Search Name: CRASHEDI-ERROR-Catchall
+Time Range: Last 1 hours
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR
+Filters: 
+
+Search Name: CRASHEDI-ERROR-Determine
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR AND json.$values.Key:"edi:error" AND json.$values.Value:"Unable to determine"
+Filters: 
+
+Search Name: CRASHEDI-ERROR-FileProcessing
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR AND (json.Message:"Error in GetFileMessage" OR json.Message:"Could not find info for")
+Filters: 
+
+Search Name: CRASHEDI-ERROR-Identifier
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR AND json.Message:"practice identifiers"
+Filters: 
+
+Search Name: CRASHEDI-ERROR-Identify
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR AND json.$values.Key:"edi:error" AND json.$values.Value:"Unable to identify"
+Filters: 
+
+Search Name: CRASHEDI-ERROR-Recover
+Time Range: Last 2 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR AND json.$values.Key:"edi:error" AND json.$values.Value:"marked for recovery"
+Filters: 
+
+Search Name: CRASHEDI-ERROR-Transfer
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR AND (json.message:"Failed to download file" OR json.Message:"Failed to upload file" OR json.Message:"Failed to transfer" OR json.Message:"Partially transferred")
+Filters: 
+
+Search Name: CRASHEDI-ERROR-Translate
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:loggly-log4net-appender AND json.Hostname:*EDI01 AND json.Severity:ERROR AND json.$values.Key:"edi:error" AND json.$values.Value:"Unable to translate"
+Filters: 
+
+Search Name: CRASHELIG-ERROR
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*ELIG01 json.process:crash json.Severity:ERROR -json.exceptionObject.exceptionMessage:"Processing error occurred in [CRASH_ELIG]" -json.exceptionObject.exceptionMessage:"The request channel timed out while waiting for a reply" not ((json.loggerName:TranslateFromX12Processor or "Key: transaction_type Value: 271") and "Constraint failed on segment NM1: NM1_person_fields") not (("Key: transaction_type Value: 271") and  -("Key: crash:error"))
+Filters: 
+
+Search Name: CRASHEXP-ERROR
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*EXP01 json.process:crash json.Severity:ERROR not (json.loggerName:EmcBatchProcessor and json.exceptionObject.exceptionMessage:"The required attribute 'member_number' is missing")
+Filters: 
+
+Search Name: CRASHINT-ERROR
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*INT01 json.process:crash json.Severity:ERROR -json.$values.Value:"*Send HL7 failed on try*" NOT (json.loggerName:"HL7ListenerProcessor" AND json.exceptionObject.exceptionMessage:"An existing connection was forcibly closed by the remote host")
+Filters: 
+
+Search Name: CRASHLAB-ERROR
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*LAB01 json.process:crash json.Severity:ERROR -"Internal result code not found for lab_id" -json.$values.Value:("listener-processor" AND "An existing connection was forcibly closed by the remote host") -"Lab did not return correct" -"Order not found for order_key"
+Filters: 
+
+Search Name: CRASHPFI-Charge-Invalid-DX-Pointer
+Time Range: Last 1 days
+Owner: swu
+Alerts: 0
+Search String: json.Hostname:*PFI01 json.process:crash json.Severity:ERROR json.loggerName:ErrorProcessor "Invalid diagnosis pointer in field"
+Filters: 
+
+Search Name: CRASHPFI-ERROR
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*PFI01 json.process:crash json.Severity:ERROR -json.$values.Value:("Send HL7 failed on try 1" OR "Send HL7 failed on try 2") -json.exceptionObject.exceptionMessage:("1001|" OR "1002|" OR "1003|" OR "1004|" OR "1005|" OR "1006|" OR "10017" OR "10018" OR "10019" OR "1010|" OR "1011|" OR "1012|" OR "1013|" OR "1014|" OR "2001|") -"Key: crash:error Value: System.Exception: Practice task error" not ("Invalid diagnosis pointer in field" and "The transaction ended in the trigger") -"Unable to find orderable external_result_code for placer_order_number"  not ("key ehr_code value AM" or "key ehr_code value EQ")
+Filters: 
+
+Search Name: CRASHRPT-ERROR-Crash
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 1
+Search String: json.process:crash json.Hostname:*RPT0* json.Severity:ERROR (json.loggerName:Crash.* OR json.loggerName:ConnxtGen.*)
+Filters: 
+
+Search Name: CRASHRPT-ERROR-Report
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 1
+Search String: json.process:crash json.Hostname:*RPT0* json.$values.Key:send_email
+Filters: 
+
+Search Name: CRASHRPT-INFO-StartStop
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: json.process:crash json.Hostname:*RPT0* json.Message:("module started" OR "module stopped" OR "loading module" OR "unloading module")
+Filters: 
+
+Search Name: EventLog-Critical-SQLClient
+Time Range: Last 7 days
+Owner: dyoung
+Alerts: 1
+Search String: json.EventID:18056
+Filters: 
+
+Search Name: EventLog-Critical-SQLJobFailed
+Time Range: Last 10 minutes
+Owner: dyoung
+Alerts: 1
+Search String: json.EventID:208 OR json.EventID:3041
+Filters: 
+
+Search Name: EventLog-Warning-ASPNetTimeout
+Time Range: Last 7 days
+Owner: dyoung
+Alerts: 1
+Search String: json.EventID:1309
+Filters: 
+
+Search Name: LABRESULT-Inbound-CAS
+Time Range: Last 1 hours
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Hostname:INT01 json.Message:"HL7 MSH: MSH|^~\\&|AH|CAS*"
+Filters: 
+
+Search Name: LABRESULT-Inbound-CLH
+Time Range: Last 1 hours
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Hostname:INT01 json.Message:"HL7 MSH: MSH|^~\\&|LAB|*"
+Filters: 
+
+Search Name: LABRESULT-Inbound-DLS
+Time Range: Last 1 hours
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Hostname:INT01 json.Message:"HL7 MSH: MSH|^~\\&|LIS|DLS*"
+Filters: 
+
+Search Name: LABRESULT-Inbound-HDR
+Time Range: Last 1 hours
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Hostname:INT01 json.Message:"HL7 MSH: MSH|^~\\&|CP|HDR*"
+Filters: 
+
+Search Name: LABRESULT-Inbound-RAD
+Time Range: Last 1 hours
+Owner: swu
+Alerts: 0
+Search String: json.process:crash json.Hostname:INT01 json.Message:"HL7 MSH: MSH|^~\\&|RAD|QMC*"
+Filters: 
+
+Search Name: MO_loading_module
+Time Range: Last 1 days
+Owner: motani
+Alerts: 0
+Search String: json.message:"Loading module:" AND "pfi"
+Filters: 
+
+Search Name: MO_TEST4_PFI_ext_prov
+Time Range: Last 3 hours
+Owner: motani
+Alerts: 0
+Search String: "TEST4PFI01" and "pfi_ext_prov"
+Filters: 
+
+Search Name: MSMQ-MSG-Count
+Time Range: Last 1 hours
+Owner: swu
+Alerts: 1
+Search String: -json.QueueName:("edi:identify" OR "cc:era_x12" OR "cc:csr_x12")
+Filters: 
+
+Search Name: MSMQ-MSG-COUNT-cc-csr_x12
+Time Range: Last 2 days
+Owner: swu
+Alerts: 0
+Search String: json.QueueName:"cc:csr_x12"
+Filters: 
+
+Search Name: MSMQ-MSG-COUNT-cc-era_x12
+Time Range: Last 2 days
+Owner: swu
+Alerts: 1
+Search String: json.QueueName:"cc:era_x12"
+Filters: 
+
+Search Name: MSMQ-MSG-COUNT-edi-identify
+Time Range: Last 2 days
+Owner: swu
+Alerts: 1
+Search String: json.QueueName:"edi:identify"
+Filters: 
+
+Search Name: PFIADMIN-ERROR
+Time Range: Last 1 hours
+Owner: swu
+Alerts: 0
+Search String: json.Hostname:*PFI01 json.process:w3wp json.Severity:ERROR
+Filters: 
+
+Search Name: PFIADMIN-MASSLOAD-Practice
+Time Range: Last 1 days
+Owner: swu
+Alerts: 1
+Search String: json.Hostname:*PFI01 json.$values.Key:massload_type json.loggerName:ASP.pages_massload_massload_aspx
+Filters: 
+
+Search Name: RPTSRSS-Critical-CantConnect
+Time Range: Last 7 days
+Owner: dyoung
+Alerts: 1
+Search String: json.EventID:107
+Filters: 
+
+Search Name: RPTSRSS-Critical-RqstDropped
+Time Range: Last 7 days
+Owner: dyoung
+Alerts: 1
+Search String: json.EventID:112
+Filters: 
+
+Search Name: RPTSSRS-ERROR-Report
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 1
+Search String: syslog.host:*RPT0* "SSRSLogs" "e ERROR" "ReportProcessingException" -"ProcessingAbortedException" -"An exception has occurred in data set"
+Filters: 
+
+Search Name: RPTSSRS-INFO-AbortCalled
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: syslog.host:*RPT0* "SSRSLogs" "abort handler called"
+Filters: 
+
+Search Name: RPTSSRS-INFO-ExpiredRequest
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 1
+Search String: syslog.host:*RPT0* "SSRSLogs" "found expired request"
+Filters: 
+
+Search Name: RPTSSRS-WARN-MemoryShrink
+Time Range: Last 2 days
+Owner: cmcnicoll
+Alerts: 0
+Search String: syslog.host:*RPT0* "SSRSLogs" "Memory Shrink Request Received"
+Filters: 
+
+Search Name: RPTSSRS-WARN-RestartService
+Time Range: Last 7 days
+Owner: cmcnicoll
+Alerts: 1
+Search String: json.Hostname:*RPT0* tag:restartservice
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-CheckIISLogs
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:checkiis AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-DeleteSessions
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:deletesessions AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-FilesVolumeBackup
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:files AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-LogsVolumeBackup
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:logs AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-PurgeOldFiles
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:purgeoldfiles AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-RemoveSecurityGroups
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:removesecuritygroups AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-RemoveSnapshot
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:removesnapshot AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-Replication
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:replication AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-SqlBackup
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:sqlbackup AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-SqlTlog
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:sqltlog AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-StartupShutdownEnvironment
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:startupshtudwon AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-UploadIISLogs
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:uploadiis AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-VpnTunnel
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:vpntunnel AND json.Severity:ERROR
+Filters: 
+
+Search Name: SCHEDTASKS-ERROR-ZipIISLogs
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:zipiis AND json.Severity:ERROR
+Filters: 
+
+Search Name: Security-Informational-UserLogin
+Time Range: Last 10 minutes
+Owner: dyoung
+Alerts: 1
+Search String: "logon type*10"
+Filters: syslog.appName._facet : Microsoft-Windows-Security-Auditing
+
+Search Name: SYNC-ERROR
+Time Range: Last 1 days
+Owner: jsunouchi
+Alerts: 1
+Search String: tag:sync AND json.Severity:ERROR
+Filters: 
+
+Search Name: Syslog Errors
+Time Range: Last 1 days
+Owner: cstollar
+Alerts: 0
+Search String: syslog.severity:Error
+Filters: 
+
+Search Name: Web Server Client Errors
+Time Range: Last 1 days
+Owner: cstollar
+Alerts: 0
+Search String: apache.status:[400 TO 499] OR nginx.status:[400 TO 499]
+Filters: 
+
+Search Name: Web Server Internal Errors
+Time Range: Last 1 days
+Owner: cstollar
+Alerts: 0
+Search String: apache.status:>=500 OR nginx.status:>=500
+Filters: 
+
